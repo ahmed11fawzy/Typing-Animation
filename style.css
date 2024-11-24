@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0A4D68;
+}
+.btn ,h1{
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: #088395 0px 0px 5px;
+    color: #09a9c2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.btn:hover ,h1:hover{
+    color: #00FFCA;
+    box-shadow: #00FFCA 0px 0px 5px;
+    
+}
+
+
+h1::after{
+    content: '';
+    animation-name: typing ;
+    animation-duration: 5s;
+    animation-iteration-count: finite;
+
+}
+
+@keyframes typing {
+    0%{content:""}
+    0%{content:" "}
+    0%{content:"  "}
+    0%{content:"   "}
+    10%{content:"   "}
+    20%{content:"    " }
+    25%{content:"    H" }
+    30%{content:"Hi " }
+    35%{content:"Hi r"}
+    40%{content:"Hi re"}
+    50%{content:"Hi reu"}
+    60%{content:"Hi reus"}
+    70%{content:"Hi reus" }
+    80%{content:"Hi reus 🤞" }
+    90%{content:"Hi reus 🤞 "  }
+    100%{content:"Hi reus 🤞 ❤"}
+}
+
